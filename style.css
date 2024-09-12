@@ -41,14 +41,14 @@ body {
   font-weight: bolder;
 }
 
-.profile_name .contact_info {
+.profile_name .contact_info a {
   font-size: 20px;
   text-decoration: none; /* Removes the underline */
   color: #0353A4; /* Explicity set the color */
   font-weight: normal; /* Makes the font weight normal */
 }
 
-nav .profile_name .contact_info:hover {
+nav .profile_name .contact_info a:hover {
   color: #0353A4; /* Change color on hover */
   font-weight: bolder; /* Make it bold on hover */
 }
