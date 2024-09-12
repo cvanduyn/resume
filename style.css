@@ -131,7 +131,7 @@ h2 {
   display: block;
   border-radius: 6px;
   text-align: center;
-  margin: 60px;
+  margin: 40px;
   padding: 30px;
   width: 2in;
   font-size: 20px;
@@ -139,7 +139,7 @@ h2 {
 }
 
 .skill img {
-  height: 55px;
+  height: 65px;
   align-items: center;
 }
 
