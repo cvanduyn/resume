@@ -43,12 +43,9 @@ body {
 
 .profile_name .contact_info {
   font-size: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  font-weight: normal;
   text-decoration: none; /* Removes the underline */
   color: inherit; /* Inherits the color from the parent element */
+  font-weight: normal; /* Makes the font weight normal */
 }
 
 .contact_info img {
