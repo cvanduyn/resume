@@ -47,14 +47,14 @@ body {
   align-items: center;
   flex-direction: row;
   font-weight: normal;
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the color from the parent element */
 }
 
 .contact_info img {
   width:25px;
   margin-right: 10px;
   float:left;
-  text-decoration: none; /* Removes the underline */
-  color: inherit; /* Inherits the color from the parent element */
 }
 
 /* Titles */
