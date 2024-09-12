@@ -113,6 +113,13 @@ h2 {
   margin: 5px;
 }
 
+.image-container {
+  display: flex; /*use flexbox */
+  justify-content: center; /*Center horizontally */
+  align-items: center; /*Center vertically */
+  height: 100vh; /* Set a height, e.g., fully viewport height */
+}
+
 /* Skills */
 
 .all_skills {
