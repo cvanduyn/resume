@@ -50,7 +50,7 @@ body {
 
 nav .profile_name .contact_info a:hover {
   color: #0353A4; /* Change color on hover */
-  font-weight: 500; /* Medium weight */
+  font-weight: bolder; /* Medium weight */
   text-decoration: none; /* Ensure no underline on hover */
 }
 
