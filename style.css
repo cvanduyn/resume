@@ -50,7 +50,7 @@ body {
 }
 
 .profile_name .contact_info:hover {
-  font-weight: 400;
+  font-weight: normal;
 }
 
 .contact_info img {
