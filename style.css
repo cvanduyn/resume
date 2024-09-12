@@ -41,7 +41,7 @@ body {
   font-weight: bolder;
 }
 
-.profile_name .contact_info a{
+.profile_name .contact_info a {
   font-size: 20px;
   text-decoration: none; /* Removes the underline */
   color: inherit; /* Inherits the color from the parent element */
