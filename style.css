@@ -105,8 +105,10 @@ h2 {
 }
 
 .profile_image {
-  width: 550px;
-  height: fit-content;
+  width: 300px; /*reduced width*/
+  height: auto; /*maintains aspect ratio*/
+  display: block; /*ensures the image takes up block-level space*/
+  margin: 5px auto; /*centers the image horizontally*/
   vertical-align: middle;
   margin: 5px;
 }
