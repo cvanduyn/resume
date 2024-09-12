@@ -49,6 +49,11 @@ body {
   font-weight: normal;
 }
 
+.profile_name .contact_info:hover {
+  color: #006DAA;
+  font-weight: bolder;
+}
+
 .contact_info img {
   width:25px;
   margin-right: 10px;
