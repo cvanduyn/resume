@@ -5,27 +5,27 @@ body {
 /* Navigation Bar */
 
 #home {
-  background-color:  #b9d6f2;
+  background-color:  #e8e9f3;
   padding-bottom: 1cm;
   margin-left:-1cm;
   margin-right:-1cm;
   margin-top:-1cm;
   padding-top: 2cm;
-  padding-bottom: 2cm;
+  padding-bottom: 1.5cm;
   height: 5mm;
  }
 
 .topmenu {
-  color: #0353A4;
-  margin: 10px;
-  padding: 20px;
+  color: #272635;
+  margin: 5px;
+  padding: 1px;
   font-size: 22px;
   text-decoration:none;
 }
 
 .topmenu:hover {
-  color: #006DAA;
-  font-weight: bolder;
+  color: #272635;
+  font-weight: 600;
 }
 
 .topdiv {
@@ -36,21 +36,21 @@ body {
 .profile_name {
   float: left;
   padding-left: 2cm;
-  color: #0353A4;
+  color: #272635;
   font-size: 30px;
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 .profile_name .contact_info a {
   font-size: 20px;
   text-decoration: none; /* Removes the underline */
-  color: #0353A4; /* Explicity set the color */
+  color: #272635; /* Explicity set the color */
   font-weight: normal; /* Makes the font weight normal */
 }
 
 nav .profile_name .contact_info a:hover {
-  color: #0353A4; /* Change color on hover */
-  font-weight: bolder; /* Medium weight */
+  color: #272635; /* Change color on hover */
+  font-weight: 600;
   text-decoration: none; /* Ensure no underline on hover */
 }
 
@@ -67,7 +67,7 @@ h2 {
   font-size: 50px;
   text-align: center;
   float: left;
-  color: #0353A4;
+  color: #272635;
   margin: 30px;
   margin-left: 60px;
   margin-top: 40px;
@@ -101,7 +101,7 @@ h2 {
 #about-me h1 {
   font-size: 65px;
   margin-top: 90px;
-  color: #0353A4;
+  color: #272635;
 }
 
 #about-me p {
@@ -135,10 +135,10 @@ h2 {
 .skill {
   border: 1px solid gray;
   display: block;
-  border-radius: 6px;
+  border-radius: 7px;
   text-align: center;
-  margin: 40px;
-  padding: 30px;
+  margin: 15px;
+  padding: 20px;
   width: 2in;
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
@@ -224,12 +224,14 @@ h2 {
   font-size: 18px;
   min-height: 150px;
   overflow: auto;
+  box-shadow: 0 3px 100px #a6a6a8;
 }
 
 .recommendation span {
   color: #0353A4;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
+  
 }
 
 /* Scroll to Top Button */
@@ -238,7 +240,7 @@ h2 {
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-color: #0353A4;
+  background-color: #272635;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,4 +337,3 @@ button:hover {
   text-align: center;
   cursor: pointer;
 }
-
