@@ -17,10 +17,8 @@ This repository contains the source code for my personal website, which serves a
 
 ## Features
 - **Responsive Design**: The site is built to be mobile-friendly and adjusts based on the device screen size.
-- **Profile Picture**: A professional headshot displayed on the About Me section.
 - **Skill Icons**: Custom skill icons that visually represent my areas of expertise.
-- **SVG Icons**: Custom SVG icons used for aesthetic and functional elements (e.g., back to top button).
-- **Recommendations Section**: A scrollable section showcasing quotes from people I've worked with.
+- **SVG Icon**: Custom SVG icon used for aesthetic and functional element (back to top button).
 
 ## Usage
 Feel free to fork and use this project as a template for your own personal website. Contributions are welcome if you'd like to improve the design or functionality.
