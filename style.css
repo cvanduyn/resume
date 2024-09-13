@@ -11,7 +11,7 @@ body {
   margin-right:-1cm;
   margin-top:-1cm;
   padding-top: 2cm;
-  padding-bottom: 1.25cm;
+  padding-bottom: 1.5cm;
   height: 5mm;
  }
 
@@ -138,14 +138,14 @@ h2 {
   border-radius: 7px;
   text-align: center;
   margin: 15px;
-  padding: 5px;
-  width: 1.85in;
+  padding: 20px;
+  width: 2in;
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
 }
 
 .skill img {
-  height: 70.px;
+  height: 65px;
   align-items: center;
 }
 
