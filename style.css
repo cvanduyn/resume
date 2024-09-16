@@ -202,9 +202,9 @@ h2 {
   margin-left: 30px;
 }
 
-/* Recommendations */
+/* Testimonials */
 
-.all_recommendations {
+.all_testimonials {
   display: flex;
   align-items: flex-start;
   margin-left: 1in;
@@ -213,7 +213,7 @@ h2 {
   padding: 20px;
 }
 
-.recommendation {
+.testimonial {
   font-style: italic;
   text-align: left;
   width: 21.875rem;
@@ -230,7 +230,7 @@ h2 {
   box-shadow: 0 3px 100px #a6a6a8;
 }
 
-.recommendation span {
+.testimonial span {
   color: #0353A4;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
@@ -297,7 +297,7 @@ h2 {
   margin-left: 25%;
 }
 
-/* Recommendation Form */
+/* Testimonial Form */
 
 input, textarea {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
