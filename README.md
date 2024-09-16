@@ -1,5 +1,5 @@
 # Cory Van Duyn's Personal Website
-www.coryvanduyn.com
+https://www.coryvanduyn.com
 
 ## Overview
 This repository contains the source code for my personal website, which serves as a digital resume and portfolio. The website is built with HTML, CSS, and JavaScript, and it includes details about my professional experience, skills, projects, and recommendations. It is designed to provide potential employers and collaborators with an overview of my capabilities and achievements.
