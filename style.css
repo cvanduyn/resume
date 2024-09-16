@@ -41,7 +41,7 @@ body {
   padding-left: 2cm;
   color: #272635;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: normal; /* Makes the font weight normal */
 }
 
 .profile_name .contact_info a {
