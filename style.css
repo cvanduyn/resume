@@ -287,13 +287,14 @@ h2 {
   height: 48px;
   border-radius: 100%;
   background-color: #272635;
-  display: flex;
+  display: none; /* Start Hidden */
   align-items: center;
   justify-content: center;
   position: fixed;
   right: 3%;
   bottom: 3%;
   cursor: pointer;
+  z-index: 1000;
 }
 
 /* Form Pop-up */
