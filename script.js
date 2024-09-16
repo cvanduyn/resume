@@ -42,3 +42,11 @@ function toggleBackToTopButton() {
         backToTopButton.style.display = "none";
     }
 }
+
+// Optional smooth scroll to top
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
