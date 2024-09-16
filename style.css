@@ -5,7 +5,7 @@ body {
 /* Navigation Bar */
 
 #home {
-  background-image: url(html_images/banner.jpg);
+  background-image: url(html_images/banner.png);
   background-size: cover; /* Ensures the image covers the element */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
