@@ -211,15 +211,11 @@ h2 {
 }
 
 .certification {
-  border: 1px solid gray;
-  display: block;
-  border-radius: 7px;
   text-align: center;
   margin: 15px;
   padding: 20px;
   width: 2in;
   font-size: 20px;
-  box-shadow: 0 3px 10px gray;
 }
 
 .certification img {
