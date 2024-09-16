@@ -5,7 +5,10 @@ body {
 /* Navigation Bar */
 
 #home {
-  background-color:  #e8e9f3;
+  background-image: url(html_images/banner.jpg);
+  background-size: cover; /* Ensures the image covers the element */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
   padding-bottom: 1cm;
   margin-left:-1cm;
   margin-right:-1cm;
