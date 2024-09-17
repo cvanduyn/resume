@@ -53,18 +53,20 @@ function scrollToTop() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const slider = new KeenSlider("#all_testimonials", {
-    loop: true,
-    slidesPerView: 1,
-    spacing: 10,
+    loop: true,                // Loop through slides
+    centered: true,            // Centers the active slide
+    slidesPerView: 1.5,        // Show part of the next slide
+    spacing: 20,               // Space between slides
     breakpoints: {
       "(min-width: 600px)": {
-        slidesPerView: 2,
-        spacing: 15,
+        slidesPerView: 2.5,    // Show 2.5 slides on medium screens
+        spacing: 20,           // Adjust space between slides
       },
       "(min-width: 1000px)": {
-        slidesPerView: 3,
-        spacing: 20,
+        slidesPerView: 3.5,    // Show 3.5 slides on large screens
+        spacing: 30,           // More space between slides on large screens
       },
     },
   });
 });
+

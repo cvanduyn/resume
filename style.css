@@ -247,33 +247,46 @@ h2 {
 /* Testimonials */
 
 .all_testimonials {
-  margin-left: 1in;
   padding: 20px;
+  margin: 0 auto; /* Center the slider */
+  width: 100%; /* Full width of the page */
 }
 
 .testimonial {
   font-style: italic;
-  text-align: left;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
-  margin: 10px;
-  border: 1px solid gray;
-  font-size: 18px;
-  min-height: 150px;
-  overflow: auto;
-  box-shadow: 0 3px 100px #a6a6a8;
-  flex: 1 1 auto; /* Let the slider control the size of the slides */
+  font-size: 16px; /* Adjust font size for smaller boxes */
+  line-height: 1.5; /* Add some line spacing */
+  word-wrap: break-word; /* Ensure long words wrap correctly */
 }
-
 
 .testimonial span {
   color: #0353A4;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Times New Roman', Times, serif;
 }
 
+/* KeenSlider basic styling */
+.keen-slider {
+  display: flex;
+  overflow: hidden; /* Ensure only visible slides are shown */
+  width: 100%; /* Full width for responsiveness */
+  max-width: 1200px; /* Limit the max width */
+  margin: 0 auto; /* Center the slider */
+}
+
+.keen-slider__slide {
+  flex: 0 0 auto; /* Prevent the slides from stretching */
+  width: auto; /* Allow the content to determine width */
+  max-width: 300px; /* Set a maximum width for each slide */
+  box-sizing: border-box; /* Maintain padding and margins */
+  height: auto; /* Let the slide adjust its height dynamically */
+  padding: 20px; /* Add padding inside the slides */
+  background-color: #fff; /* Set background color */
+  border-radius: 11px; /* Round the corners */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin: 10px; /* Add space between slides */
+  text-align: center; /* Center the text */
+}
 
 /* Scroll to Top Button */
 
