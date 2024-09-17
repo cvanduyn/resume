@@ -51,10 +51,6 @@ function scrollToTop() {
     });
 }
 
-// Import KeenSlider
-import KeenSlider from "keen-slider";
-
-// Initialize KeenSlider for the testimonials section
 document.addEventListener("DOMContentLoaded", () => {
   const slider = new KeenSlider("#all_testimonials", {
     loop: true,

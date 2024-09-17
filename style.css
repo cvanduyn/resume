@@ -118,7 +118,6 @@ h2 {
   height: auto; /*maintains aspect ratio*/
   display: block; /*ensures the image takes up block-level space*/
   margin: 5px 60px; /*centers the image horizontally*/
-  vertical-align: middle;
 }
 
 .image-container {
@@ -248,37 +247,33 @@ h2 {
 /* Testimonials */
 
 .all_testimonials {
-  display: flex;
-  align-items: flex-start;
   margin-left: 1in;
-  flex-direction: row;
-  flex-wrap: wrap;
   padding: 20px;
 }
 
 .testimonial {
   font-style: italic;
   text-align: left;
-  width: 21.875rem;
   padding: 1rem;
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
   margin: 10px;
-  border:1px solid gray;
+  border: 1px solid gray;
   font-size: 18px;
   min-height: 150px;
   overflow: auto;
   box-shadow: 0 3px 100px #a6a6a8;
+  flex: 1 1 auto; /* Let the slider control the size of the slides */
 }
+
 
 .testimonial span {
   color: #0353A4;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
-  
 }
+
 
 /* Scroll to Top Button */
 
