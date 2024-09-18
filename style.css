@@ -130,50 +130,32 @@ h2 {
 
 .all_skills {
   display: flex;
-  flex-direction: row;
   flex-flow: wrap;
   margin-left: 60px;
 }
 
 .skill {
-  border: 1px solid gray;
-  display: block;
+  display: flex; /* Enables flexbox */
+  flex-direction: column; /* Aligns items vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
   border-radius: 7px;
   text-align: center;
   margin: 15px;
-  padding: 20px;
-  width: 2in;
+  padding: 15px;
+  width: 1.5in;
   font-size: 20px;
-  box-shadow: 0 3px 10px gray;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
 }
 
 .skill img {
-  height: 65px;
-  align-items: center;
+  height: 70px;
 }
 
-.skills h6 {
-  align-items: center;
-  font-size: 20px;
-  margin-block-start: 8px;
-  margin-block-end: 5px;
-  font-weight: bold;
-} 
-
-.skills p {
-  align-items: center;
-  font-size: 15px;
-  color: gray;
-  margin-block-start: 5px;
-  margin-block-end: 5px;
-} 
-
-.flex_center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.skill:hover {
+  transform: translateY(-5px); /* Slight upward shift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
 }
-
 /* Experience */
 
 .experience-container {
@@ -200,6 +182,13 @@ h2 {
 .experience-card li {
   font-size: 20px;
   margin-left: 30px;
+}
+
+/* No Link Style */
+
+.no-link-style {
+  color: inherit; /* Inherit the color from the parent element */
+  text-decoration: none; /* Remove the underline */
 }
 
 /* Certifications */
