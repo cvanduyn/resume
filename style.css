@@ -132,7 +132,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
-  margin: 60px;
+  margin-left: 60px;
 }
 
 .skill {
@@ -208,7 +208,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
-  margin: 60px;
+  margin-left: 60px;
 }
 
 .certification {
@@ -251,8 +251,7 @@ h2 {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping of the testimonials */
   justify-content: center; /* Center the testimonials */
-  margin: 60px auto; /* Center the container horizontally */
-  max-width: 1200px; /* Optional: limit container width for readability */
+  margin-left: 60px;
   gap: 20px; /* Space between testimonials */
 }
 
@@ -264,7 +263,7 @@ h2 {
   border-radius: 10px; /* Rounded corners */
   padding: 20px; /* Padding inside each testimonial */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
-  font-size: 18px; /* Slightly smaller text for readability */
+  font-size: 20px; /* Slightly smaller text for readability */
   line-height: 1.6; /* Better line spacing for readability */
   color: #555; /* Darker text color for contrast */
   text-align: left; /* Left-align text for a more professional look */
