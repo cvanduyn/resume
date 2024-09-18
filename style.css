@@ -264,8 +264,8 @@ h2 {
   padding: 20px; /* Padding inside each testimonial */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
   font-size: 20px; /* Slightly smaller text for readability */
-  line-height: 1.6; /* Better line spacing for readability */
-  color: #555; /* Darker text color for contrast */
+  line-height: 1.25; /* Better line spacing for readability */
+  color: #272635; /* Darker text color for contrast */
   text-align: left; /* Left-align text for a more professional look */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
 }
