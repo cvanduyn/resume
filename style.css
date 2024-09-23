@@ -331,3 +331,27 @@ button:hover {
   text-align: center;
   cursor: pointer;
 }
+
+/* Footer */
+
+footer {
+  background-image: url(html_images/bannerfooter.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1.5cm;
+  text-align: center;
+  color: white;
+  margin-left: -1cm;
+  margin-right: -1cm;
+  margin-top: 1cm;
+}
+
+footer p {
+  margin: 0;
+  font-size: 30px;
+}
+
+footer i {
+  margin-left: 5px; /* Adjust the value as needed */
+}
