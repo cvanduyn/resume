@@ -13,9 +13,8 @@ body {
   margin-left:-1cm;
   margin-right:-1cm;
   margin-top:-1cm;
-  padding-top: 2cm;
+  padding-top: 1.5cm;
   padding-bottom: 1.5cm;
-  height: 5mm;
  }
 
 .topmenu {
@@ -339,7 +338,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 1.5cm;
+  padding: 1cm;
   text-align: center;
   color: white;
   margin-left: -1cm;
