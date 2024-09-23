@@ -350,9 +350,12 @@ footer {
 footer p {
   margin: 0;
   font-size: 30px;
-  font-weight: normal;
 }
 
 footer i {
   margin-left: 5px; /* Adjust the value as needed */
+}
+
+html, body {
+  height: 100%; /* Ensures that the body takes up full height */
 }
