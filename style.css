@@ -118,6 +118,7 @@ h2 {
   font-size: 25px;
   color: #2f2e36;
   margin-top: -1cm;
+  margin-right: 60px;
 }
 
 .profile_image {
@@ -133,6 +134,19 @@ h2 {
   align-items: center; /*Center vertically */
 }
 
+
+/* Methodoloy */
+
+#method {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#method p {
+  font-size: 25px;
+  color: #2f2e36;
+  margin-top: -1cm;
+}
 
 /* Skills */
 
@@ -171,6 +185,7 @@ h2 {
 .experience-container {
   margin-top: 30px;
   margin-left: 60px;
+  margin-right: 60px;
 }
 
 .experience-container hr {
@@ -208,6 +223,7 @@ h2 {
   flex-direction: row;
   flex-flow: wrap;
   margin-left: 60px;
+  margin-right: 60px;
 }
 
 .certification {
@@ -253,6 +269,7 @@ h2 {
   flex-wrap: wrap; /* Allow wrapping of the testimonials */
   justify-content: center; /* Center the testimonials */
   margin-left: 60px;
+  margin-right: 60px;
   gap: 20px; /* Space between testimonials */
 }
 
