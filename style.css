@@ -153,6 +153,7 @@ h2 {
   display: flex;
   flex-flow: wrap;
   margin-left: 60px;
+  margin-right: 60px;
 }
 
 .skill {
