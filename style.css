@@ -35,6 +35,12 @@ html {
   font-weight: 600;
 }
 
+.calendar-hover:hover {
+  color: #ffab23;
+  transform: scale(1.3);
+  transition: all 0.2s ease; /* Smooth transition */
+}
+
 .topdiv {
   float: right;
   padding-right: 1cm;
