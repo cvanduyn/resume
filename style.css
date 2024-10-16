@@ -11,9 +11,9 @@ html {
 
 #home {
   background-image: url(html_images/banner.png);
-  background-size: cover; /* Ensures the image covers the element */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-bottom: 1cm;
   margin-left:-1cm;
   margin-right:-1cm;
@@ -56,20 +56,20 @@ html {
   padding-left: 2cm;
   color: #272635;
   font-size: 30px;
-  font-weight: normal; /* Makes the font weight normal */
+  font-weight: normal;
 }
 
 .profile_name .contact_info a {
   font-size: 20px;
-  text-decoration: none; /* Removes the underline */
-  color: #272635; /* Explicity set the color */
-  font-weight: normal; /* Makes the font weight normal */
+  text-decoration: none;
+  color: #272635;
+  font-weight: normal;
 }
 
 nav .profile_name .contact_info a:hover {
-  color: #272635; /* Change color on hover */
+  color: #272635;
   font-weight: 600;
-  text-decoration: none; /* Ensure no underline on hover */
+  text-decoration: none;
 }
 
 .contact_info img {
@@ -133,16 +133,16 @@ h2 {
 }
 
 .profile_image {
-  width: 275px; /*reduced width*/
-  height: auto; /*maintains aspect ratio*/
-  display: block; /*ensures the image takes up block-level space*/
-  margin: 5px 60px; /*centers the image horizontally*/
+  width: 275px;
+  height: auto;
+  display: block;
+  margin: 5px 60px;
 }
 
 .image-container {
-  display: flex; /*use flexbox */
-  justify-content: center; /*Center horizontally */
-  align-items: center; /*Center vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -168,17 +168,17 @@ h2 {
 }
 
 .skill {
-  display: flex; /* Enables flexbox */
-  flex-direction: column; /* Aligns items vertically */
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers content horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 7px;
   text-align: center;
   margin: 15px;
   padding: 15px;
   width: 1.5in;
   font-size: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .skill img {
@@ -186,8 +186,8 @@ h2 {
 }
 
 .skill:hover {
-  transform: translateY(-5px); /* Slight upward shift on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -276,37 +276,37 @@ h2 {
 
 .all_testimonials {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping of the testimonials */
-  justify-content: center; /* Center the testimonials */
+  flex-wrap: wrap;
+  justify-content: center;
   margin-left: 60px;
   margin-right: 60px;
-  gap: 20px; /* Space between testimonials */
+  gap: 20px;
 }
 
 .testimonial {
-  flex: 1 1 300px; /* Flex-grow, Flex-shrink, and base size of 300px */
+  flex: 1 1 300px;
   margin: 15px;
   font-style: italic;
-  background-color: #fff; /* Clean white background */
-  border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Padding inside each testimonial */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
-  font-size: 20px; /* Slightly smaller text for readability */
-  line-height: 1.25; /* Better line spacing for readability */
-  color: #272635; /* Darker text color for contrast */
-  text-align: left; /* Left-align text for a more professional look */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  line-height: 1.25;
+  color: #272635;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .testimonial:hover {
-  transform: translateY(-5px); /* Slight upward shift on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 768px) {
   .testimonial {
-    flex: 1 1 100%; /* Stack testimonials vertically on smaller screens */
-    text-align: center; /* Center text on smaller devices */
+    flex: 1 1 100%;
+    text-align: center;
   }
 }
 
@@ -317,7 +317,7 @@ h2 {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  display: none; /* Hide the button initially */
+  display: none;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -348,19 +348,19 @@ footer p {
 }
 
 footer i {
-  margin-left: 30px; /* Adjust the value as needed */
+  margin-left: 30px;
 }
 
 html, body {
-  height: 100%; /* Ensures that the body takes up full height */
+  height: 100%;
 }
 
 
 /* No Link Style */
 
 .no-link-style {
-  color: inherit; /* Inherit the color from the parent element */
-  text-decoration: none; /* Remove the underline */
+  color: inherit;
+  text-decoration: none;
 }
 
 
