@@ -420,3 +420,11 @@ html, body {
   font-size: 24px;
   cursor: pointer;
 }
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .popup-content {
+    width: 90%; /* Make it more responsive on smaller screens */
+    margin: 5vh auto;
+  }
+}
