@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Show popup after 2 seconds
     setTimeout(function() {
       document.getElementById("popup").style.display = "block";
-    }, 4000);
+    }, 3000);
   
     // Close popup when the close button is clicked
     document.getElementById("closePopup").onclick = function() {
