@@ -408,7 +408,7 @@ html, body {
   margin: 15% auto;
   padding: 20px;
   width: 80%;
-  max-width: 400px;
+  max-width: 100px;
   text-align: center;
   border-radius: 10px;
 }
@@ -419,12 +419,4 @@ html, body {
   float: right;
   font-size: 24px;
   cursor: pointer;
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .popup-content {
-    width: 90%; /* Make it more responsive on smaller screens */
-    margin: 5vh auto;
-  }
 }
