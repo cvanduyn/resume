@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="./style.css"/>
     <script src="./script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    
+    <!-- Popup Stuff -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Example</title>
+    <link rel="stylesheet" href="style.css">
+    
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1F9XMY047T"></script>
 <script>
@@ -18,7 +25,21 @@
   </head>
   <body>
 
-    
+    <!-- Popup Stuff -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span id="closePopup" class="close">&times;</span>
+        <h3>Let’s Work Together!</h3>
+        <p>Welcome to my website! It's built from scratch and driven by my passion for web development, Agile delivery, and empowering organizations. Take a moment to explore it and learn more about me."
+          <br>
+          <br>
+          When you're ready, book a 30-minute introduction call so we can discuss how I can help your organization achieve its goals.</p>
+          <p><button class="buttonClass" onclick="window.open('https://www.calendly.com/coryvanduyn', '_blank')">Book Time</button></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
 <!-- Navigation Bar -->
     <nav>
       <div id="home">

@@ -24,3 +24,21 @@ function scrollToTop() {
 }
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Show popup after 2 seconds
+    setTimeout(function() {
+      document.getElementById("popup").style.display = "block";
+    }, 4000);
+  
+    // Close popup when the close button is clicked
+    document.getElementById("closePopup").onclick = function() {
+      document.getElementById("popup").style.display = "none";
+    };
+  
+    // Close popup if user clicks outside of it
+    window.onclick = function(event) {
+      if (event.target == document.getElementById("popup")) {
+        document.getElementById("popup").style.display = "none";
+      }
+    };
+  });
