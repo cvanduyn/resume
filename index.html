@@ -21,22 +21,22 @@
 </script>
 
 
-<!-- Event snippet for Outbound click conversion page
+<!-- Event snippet for &quot;Book Time&quot; Click Through conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.open(url, '_blank');
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-845116691/gSbRCM3i2eEZEJPq_ZID',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-845116691/gSbRCM3i2eEZEJPq_ZID',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
 
   </head>
   <body>
@@ -54,7 +54,7 @@ function gtag_report_conversion(url) {
             <br>
             <br>
             When you're ready, book a 30-minute introduction call, and let's discuss how I can help you achieve your goals.</p>
-            <p><button class="buttonClass" onclick="return gtag_report_conversion('https://www.calendly.com/coryvanduyn');">
+            <p><button class="buttonClass" onclick="gtag_report_conversion(); window.open('https://www.calendly.com/coryvanduyn', '_blank');">
               Book Time
             </button></p>
       </div>
@@ -82,7 +82,7 @@ function gtag_report_conversion(url) {
             <i class="fab fa-linkedin"></i></a>
           <a class="topmenu" href="https://www.github.com/cvanduyn" target="_blank">
             <i class="fab fa-github"></i></a>
-          <a class="topmenu" href="https://www.calendly.com/coryvanduyn" target="_blank">
+          <a class="topmenu" href="https://www.calendly.com/coryvanduyn" target="_blank" onclick="gtag_report_conversion();">
             <i class="fas fa-calendar-check calendar-hover"></i></a>
         </div>
       </div>    
@@ -131,7 +131,7 @@ function gtag_report_conversion(url) {
           <br>
         </p>
         <div style="text-align:center;">
-          <button class="buttonClass" onclick="return gtag_report_conversion('https://www.calendly.com/coryvanduyn');">
+          <button class="buttonClass" onclick="gtag_report_conversion(); window.open('https://www.calendly.com/coryvanduyn', '_blank');">
             Book Time
           </button>
         </div> 
@@ -333,7 +333,7 @@ function gtag_report_conversion(url) {
         <a href="html_files/Cory Van Duyn Resume.pdf" target="_blank" style="color: white;"><i class="fas fa-file-pdf"></i></a>
         <a href="https://www.linkedin.com/in/coryvanduyn" target="_blank" style="color: white;"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/cvanduyn" target="_blank" style="color: white;"><i class="fab fa-github"></i></a>
-        <a href="https://www.calendly.com/coryvanduyn" target="_blank" style="color: white;"><i class="fas fa-calendar-check calendar-hover-footer"></i></a></p>
+        <a href="https://www.calendly.com/coryvanduyn" target="_blank" onclick="gtag_report_conversion();" style="color: white;"><i class="fas fa-calendar-check calendar-hover-footer"></i></a></p>
     </footer>
     
     <script>
