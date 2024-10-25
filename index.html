@@ -15,13 +15,27 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
   gtag('config', 'G-1F9XMY047T');
   gtag('config', 'AW-845116691');
 </script>
 
-<!-- Event snippet for Outbound click conversion page -->
+
+<!-- Event snippet for Outbound click conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
-  gtag('event', 'conversion', {'send_to': 'AW-845116691/gSbRCM3i2eEZEJPq_ZID'});
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-845116691/gSbRCM3i2eEZEJPq_ZID',
+      'event_callback': callback
+  });
+  return false;
+}
 </script>
 
   </head>
@@ -40,7 +54,9 @@
             <br>
             <br>
             When you're ready, book a 30-minute introduction call, and let's discuss how I can help you achieve your goals.</p>
-          <p><button class="buttonClass" onclick="window.open('https://www.calendly.com/coryvanduyn', '_blank')">Book Time</button></p>
+            <p><button class="buttonClass" onclick="return gtag_report_conversion('https://www.calendly.com/coryvanduyn');">
+              Book Time
+            </button></p>
       </div>
     </div>
     <script src="script.js"></script>
@@ -115,7 +131,9 @@
           <br>
         </p>
         <div style="text-align:center;">
-          <button class="buttonClass" onclick="window.open('https://www.calendly.com/coryvanduyn', '_blank')">Book Time</button>
+          <button class="buttonClass" onclick="return gtag_report_conversion('https://www.calendly.com/coryvanduyn');">
+            Book Time
+          </button>
         </div> 
         <br>        
     </section>
