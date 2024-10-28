@@ -421,7 +421,7 @@ html, body {
   cursor: pointer;
 }
 
-/* Basic styling for the carousel */
+/* Carousel Stuff */
 .carousel-container {
   display: flex;
   justify-content: center;
@@ -437,7 +437,6 @@ html, body {
   align-items: center;
 }
 
-/* Styling each logo */
 .carousel img {
   width: 125px;
   margin: 0 20px;
