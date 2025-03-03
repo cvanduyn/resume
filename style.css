@@ -434,6 +434,7 @@ html, body {
 
 .carousel {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
