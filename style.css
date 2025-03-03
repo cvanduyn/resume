@@ -440,7 +440,9 @@ html, body {
 
 .carousel img {
   width: 125px;
+  height: 125px;
   margin: 0 20px;
+  object-fit: contain;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
