@@ -60,7 +60,7 @@
     </div>
     <script src="script.js"></script>
 -->
-
+<a href="#" style="color: white;" onclick="openSpotify()"></a>
 
     <!-- Navigation Bar -->
     <nav>
@@ -74,16 +74,12 @@
           <a class="topmenu" href="#experience">Experience</a>
           <a class="topmenu" href="#certifications">Certs</a>
           <a class="topmenu" href="#testimonials">Testimonials</a>
-          <a class="topmenu" href="https://forms.gle/bodPXFRUG19epKTr6" target="_blank">
-            <i class="fas fa-envelope"></i></a>
-            <a class="topmenu" href="html_files/Cory Van Duyn Resume.pdf" target="_blank">
-              <i class="fas fa-file-pdf"></i></a>
-            <a class="topmenu" href="https://www.linkedin.com/in/coryvanduyn" target="_blank">
-            <i class="fab fa-linkedin"></i></a>
-          <a class="topmenu" href="https://www.github.com/cvanduyn" target="_blank">
-            <i class="fab fa-github"></i></a>
-          <a class="topmenu" href="https://www.calendly.com/coryvanduyn" target="_blank" onclick="gtag_report_conversion();">
-            <i class="fas fa-calendar-check calendar-hover"></i></a>
+          <a class="topmenu" href="javascript:void(0);" onclick="openSpotify()"><i class="fab fa-spotify"></i></a>
+          <a class="topmenu" href="https://forms.gle/bodPXFRUG19epKTr6" target="_blank"><i class="fas fa-envelope"></i></a>
+          <a class="topmenu" href="html_files/Cory Van Duyn Resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+          <a class="topmenu" href="https://www.linkedin.com/in/coryvanduyn" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a class="topmenu" href="https://www.github.com/cvanduyn" target="_blank"><i class="fab fa-github"></i></a>
+          <a class="topmenu" href="https://www.calendly.com/coryvanduyn" target="_blank" onclick="gtag_report_conversion();"><i class="fas fa-calendar-check calendar-hover"></i></a>
         </div>
       </div>    
     </nav>
@@ -353,6 +349,21 @@
       </div>
     </section>
 
+    <div id="spotifyContainer" class="spotify-container" style="display: none;">
+      <div class="drag-handle">
+          <span class="grab-icon">☰</span>
+          <button class="close-btn" onclick="closeSpotify()">×</button>
+      </div>
+      <iframe style="border-radius:12px" 
+              src="https://open.spotify.com/embed/playlist/4xZJ0jEyd28E61CXECX88u?utm_source=generator&theme=0" 
+              width="400" 
+              height="152" 
+              frameBorder="0" 
+              allowfullscreen="" 
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy">
+      </iframe>
+  </div>
 
 <!-- Misc -->    
     <div class="iconbutton" id="backToTop" onclick="scrollToTopAndChangeUrl()">
@@ -363,18 +374,110 @@
 
     <footer>
       <p>
+        <a href="javascript:void(0);" style="color: white;" onclick="openSpotify()"><i class="fab fa-spotify"></i></a>
         <a href="https://forms.gle/bodPXFRUG19epKTr6" target="_blank" style="color: white;"><i class="fas fa-envelope"></i></a>
         <a href="html_files/Cory Van Duyn Resume.pdf" target="_blank" style="color: white;"><i class="fas fa-file-pdf"></i></a>
         <a href="https://www.linkedin.com/in/coryvanduyn" target="_blank" style="color: white;"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/cvanduyn" target="_blank" style="color: white;"><i class="fab fa-github"></i></a>
         <a href="https://www.calendly.com/coryvanduyn" target="_blank" onclick="gtag_report_conversion();" style="color: white;"><i class="fas fa-calendar-check calendar-hover-footer"></i></a></p>
     </footer>
-    
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const spotifyContainer = document.getElementById("spotifyContainer");
+          const spotifyIframe = spotifyContainer.querySelector("iframe");
+          const dragHandle = document.querySelector(".drag-handle");
+
+          let isDragging = false;
+          let startX, startY, startLeft, startTop;
+
+          // Store the original Spotify iframe source
+          const originalSpotifySrc = spotifyIframe.src;
+
+          // Set initial position to bottom-left
+          spotifyContainer.style.left = "20px";
+          spotifyContainer.style.bottom = "20px";
+          spotifyContainer.style.right = "auto";
+          spotifyContainer.style.top = "auto";
+
+          dragHandle.addEventListener("mousedown", (e) => {
+              isDragging = true;
+              startX = e.clientX;
+              startY = e.clientY;
+              startLeft = spotifyContainer.offsetLeft;
+              startTop = spotifyContainer.offsetTop;
+              spotifyContainer.style.transition = "none"; 
+              spotifyContainer.style.cursor = "grabbing";
+          });
+
+          document.addEventListener("mousemove", (e) => {
+              if (!isDragging) return;
+
+              let newLeft = startLeft + (e.clientX - startX);
+              let newTop = startTop + (e.clientY - startY);
+
+              newLeft = Math.max(10, Math.min(window.innerWidth - spotifyContainer.offsetWidth - 10, newLeft));
+              newTop = Math.max(10, Math.min(window.innerHeight - spotifyContainer.offsetHeight - 10, newTop));
+
+              spotifyContainer.style.left = newLeft + "px";
+              spotifyContainer.style.top = newTop + "px";
+              spotifyContainer.style.right = "auto";
+              spotifyContainer.style.bottom = "auto";
+          });
+
+          document.addEventListener("mouseup", () => {
+              if (!isDragging) return;
+              isDragging = false;
+              spotifyContainer.style.cursor = "grab";
+              spotifyContainer.style.transition = "left 0.3s ease, right 0.3s ease, top 0.3s ease, bottom 0.3s ease"; 
+
+              // Get window dimensions
+              let screenWidth = window.innerWidth;
+              let screenHeight = window.innerHeight;
+              let playerWidth = spotifyContainer.offsetWidth;
+              let playerHeight = spotifyContainer.offsetHeight;
+
+              // Get current position
+              let currentLeft = spotifyContainer.offsetLeft;
+              let currentTop = spotifyContainer.offsetTop;
+
+              // Calculate distances to corners
+              let distanceToLeft = currentLeft;
+              let distanceToRight = screenWidth - (currentLeft + playerWidth);
+              let distanceToTop = currentTop;
+              let distanceToBottom = screenHeight - (currentTop + playerHeight);
+
+              // Determine closest corner
+              let snapLeft = distanceToLeft < distanceToRight ? "20px" : "auto";
+              let snapRight = distanceToLeft >= distanceToRight ? "20px" : "auto";
+              let snapTop = distanceToTop < distanceToBottom ? "20px" : "auto";
+              let snapBottom = distanceToTop >= distanceToBottom ? "20px" : "auto";
+
+              // Apply snapping
+              spotifyContainer.style.left = snapLeft;
+              spotifyContainer.style.right = snapRight;
+              spotifyContainer.style.top = snapTop;
+              spotifyContainer.style.bottom = snapBottom;
+          });
+
+          // Function to open the Spotify player
+          window.openSpotify = function () {
+              spotifyContainer.style.display = "block";
+              spotifyIframe.src = originalSpotifySrc; // Restore the original URL
+          };
+
+          // Function to close the Spotify player
+          window.closeSpotify = function () {
+              spotifyContainer.style.display = "none"; 
+              spotifyIframe.src = ""; // Stop playback
+          };
+      });
+  </script>
+
     <script>
       function scrollToTopAndChangeUrl() {
           window.scrollTo({top: 0, behavior: 'smooth'});
           window.history.pushState(null, null, '/');
       }
-    </script>
+      </script>
   </body>
 </html>
